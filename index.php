@@ -317,28 +317,9 @@
 			                   
 			                   </div>
 			                   <span id="myBar_counter_git" class="myBar-counter">25%</span>
-									<div>
-			                   <!--  -------------SKILLS------------>
-			                    <!-- <div class="title-skills">
-			                       <p>E-MAILLING</p>
-			                    </div> -->
-			                   
-			                   <!-- <div class="progress-skills">
-			                       <div class="myProgress">
-			                          <div id="myBar-emailling" class="myBar"  style="width: 35%;"></div>
-			                        </div>
-			                   
-			                   </div>
-			                   <span id="myBar_counter_emailling" class="myBar-counter">35%</span>
-			                   
-			               </div>
-			            </div> --></div>
+									
 
-						<div class="col-lg-6 col-md-11 col-sm-11 col-xs-11">
-							<div class="my-skills-bg">
-								<!-- <img src="images/skills-bg.png" alt=""> -->
-							</div>
-						</div>
+						
 						
 					</div>
 				</div>
@@ -354,58 +335,45 @@
 					<div class="portfolio-area container">
 						<div class="row masonry-grid">
 							<div class="col-md-6 col-sm-12 col-lg-4 masonry-column">
-						    	<div class="wow flipInX">
-							     	<!-- <a class="w100 crea">Créa</a> -->
-							    </div>
 							    <div class="wow flipInX">
-								    <a href="http://youcode.ma/" class="" target="_blank">
-										<img src="images/repartout.png" class="" alt="">
-										<span>Youcode web site </span>
+								    <a href="https://github.com/Taha-esselmouni/MaquetteN1" class="" target="_blank">
+										<img src="images/Mock-up Web Version.png" class="" alt="">
+										<span>Mock-up Web Version</span>
 									</a>
 							    </div>
 							    <div class="wow flipInX">
-							    	<a href="http://www.epocket.ma/" class="" target="_blank">
-										<img src="images/maisondesarchis.jpg" class="" alt="">
-										<span>Epocket project</span>
+							    	<a href="http://www.Youcode.ma/" class="" target="_blank">
+										<img src="images/youcode.png" class="" alt="">
+										<span>Youcode</span>
 									</a>
 							    </div>
 							</div>
 
 						  	<div class="col-md-6 col-sm-12 col-lg-4 masonry-column">
 							    <div class="wow flipInX">
-							    	<a href="https://www.youcode.ma/" target="_blank">
-										<img src="images/paraboot.png" class="" alt="">
-										<span>Youcode site Web</span>
+							    	<a href="https://github.com/Apter-X/Ecoteam/tree/master/03.%20Refonte%20d%E2%80%99un%20design" target="_blank">
+										<img src="images/mock-up_high_fidelity_web_agency.png" class="" alt="">
+										<span>mock-up_high_fidelity_web_agency</span>
 									</a>
 							    </div>
-							    <!-- <div class="wow flipInX">
-							   		<a class="w200 passion">
-							   			<p>
-							   				Passion <span class="text-istheonly">Is The <br> only</span>  Secret!
-							   			</p>
-							   		</a>
-							    </div> -->
-							    <div class="wow flipInX">
-								    <a href="http://www.youcode.ma" class="" target="_blank">
-										<img src="images/edelec.png" class="edelec" alt="">
-										<span>Youcode site web</span>
-									</a>
-							    </div>
+							 
 						  	</div>
 
 						 	   
 
 						  	<div class="col-md-6 col-sm-12 col-lg-4 masonry-column">
-						    	<div class="wow flipInX work-div">
-							     	<a class="w300 work">Work <br>Work <br>Work</a>
+						    	<div class="wow flipInX ">
+							     	<a href="https://github.com/Taha-esselmouni/-Developpement-Webagency-" class="" target="_blank">
+										<img src="images/Developpement-Webagency.png" class="edelec" alt="">
+										<span>Developpement-Webagency</span>
 							    </div>
 							</div>
 
-                <div class="col-md-12 col-sm-12 col-lg-8 masonry-column">
+                <div class="col-md-6 col-sm-12 col-lg-8 masonry-column" style="margin-left: 34%;>
 						    	<div class="wow flipInX">
-							     	<a href="../www.youcan.com/" target="_blank">
-										<img src="images/vercors.jpg" class="width-imgv" alt="">
-										<span>YOUCAN SITE WEB</span>
+							     	<a href="https://github.com/Taha-esselmouni" target="_blank">
+										<img src="images/HTML-CSS3 Training.png" class="width-imgv" alt="">
+										<span>HTML-CSS3 Training</span>
 									</a>
 							    </div>
 							</div>
