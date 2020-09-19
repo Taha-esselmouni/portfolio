@@ -47,7 +47,7 @@
 									<nav>
 										<ul>
 											<li>
-												<a class="active" href="#hello">
+												<a href="#hello">
 													ACCEUIL             
 												</a>
 											</li>
@@ -77,11 +77,18 @@
 												</a>
 											</li>
 											<li>
-												<a href="lang/lang.php"><img src="images/en.png" style="zoom: 6%;margin: 1%;margin-left: 1%;" alt="#"></a>
-											<!-- <i class="fas fa-globe"><a herf="lang.php"></a></i> -->
-											
+											<a href="admin/login/login.php" class="login" >
+													Login
+												</a>
+											</li>
+											<li>
+												<a href="lang/lang.php" class= "lang">
+													en
+												</a>										
 											</li>
 										</ul>
+										 </li>
+		
 									</nav>
 								</div>
 							</div>
@@ -130,6 +137,16 @@
 												<a href="#contact">
 													CONTACT
 												</a>
+											</li>
+											<li>
+											<a href="admin/login/login.php" class="login" >
+													Login
+												</a>
+											</li>
+											<li>
+												<a href="lang/lang.php" class= "lang">
+													en
+												</a>										
 											</li>
 											<li>
 											<i class="fas fa-globe"></i>
@@ -324,22 +341,36 @@
 					</div>
 				</div>
 			</section>
-						<!-- Part Projet -->
+						<!------------------------------ start section Projet -------------------------------------------->
+
 			<section id="portfolio" class="portfolio-area-">
 				<div class="container wrapper">
 					<div class="porfolio-head">
 						<h2>PORTFOLIO</h2>
 						<h6>Parmi mes projets</h6>
 					</div>
+ 							<div class="portfolio-area container">
+											<div class="row masonry-grid">
+										<div class="col-md-6 col-sm-12 col-lg-4 masonry-column">
+							  			  <div class="wow flipInX">
+											</div>
+										</div>
+								<div>
+        							
+            							<?php include "proje4t.php" ;  ?>
+       					 			</div>
+     		 					</div>
+    
+							    </div>
+				
+    
 
-					<div class="portfolio-area container">
+					<!-- <div class="portfolio-area container">
 						<div class="row masonry-grid">
 							<div class="col-md-6 col-sm-12 col-lg-4 masonry-column">
 							    <div class="wow flipInX">
-								    <a href="https://github.com/Taha-esselmouni/MaquetteN1" class="" target="_blank">
-										<img src="images/Mock-up Web Version.png" class="" alt="">
-										<span>Mock-up Web Version</span>
-									</a>
+		
+    
 							    </div>
 							    <div class="wow flipInX">
 							    	<a href="http://www.Youcode.ma/" class="" target="_blank">
@@ -369,19 +400,21 @@
 							    </div>
 							</div>
 
-                <div class="col-md-6 col-sm-12 col-lg-8 masonry-column" style="margin-left: 34%;>
-						    	<div class="wow flipInX">
+                <div class="col-md-6 col-sm-12 col-lg-8 masonry-column" style="margin-left: 34%;">
+								<div class="wow flipInX ">
+								
 							     	<a href="https://github.com/Taha-esselmouni" target="_blank">
 										<img src="images/HTML-CSS3 Training.png" class="width-imgv" alt="">
 										<span>HTML-CSS3 Training</span>
 									</a>
 							    </div>
 							</div>
-
+						 -->
 
 						
 			
 			</section>
+			<!--------------------------------------end section project------------------------------------------->
 
 			<section id="services" class="services-area">
 				<div class="container wrapper">
@@ -466,7 +499,7 @@
 							<div class="contact-form">
 								<h3>Contact</h3>
 									<!-- Contact -->
-								<form class="form-group bv-form has-feedback" method="POST" action="sendEmail.php" id="contactForm" novalidate="novalidate"><button type="submit" class="bv-hidden-submit" style="display: none; width: 0px; height: 0px;"></button>
+								<form class="form-group bv-form has-feedback" method="POST" action="mail.php" id="contactForm" novalidate="novalidate"><button type="submit" class="bv-hidden-submit" style="display: none; width: 0px; height: 0px;"></button>
 
 				                   <div class="">
 				                        <div class="text-center form-contact">
