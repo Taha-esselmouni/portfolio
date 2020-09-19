@@ -102,7 +102,7 @@ if (isset($_SESSION['user'])) {
          </div>
          
           <div class="col-sm-9">
-          <a href="login/logout.php" class="btn btn-danger">Logout</a>
+          <a href="login/logout.php" class="btn btn-primary btn-l">Logout</a>
             <div class="container-fluid">
 
                 <!-- Page Heading -->

@@ -56,12 +56,12 @@ if (isset($_SESSION['user'])) {
               <li class="active"><a href="show.php">Nouveau contact</a></li> <br>
               <li class="active"><a href="project.php">ajouter les projets</a></li> <br>
               <li class="active"><a href="show-project.php">voir les projets</a></li><br> 
-              <li class="active"><a href="#">Déja lue</a></li> <br>
+              
              </ul><br>  
          </div>
     
           <div class="col-sm-9">
-          <a href="login/logout.php" class="btn btn-danger">Logout</a>
+          <a href="login/logout.php" class="btn btn-primary btn-l">Logout</a>
          </div>
       </div>
     </div>

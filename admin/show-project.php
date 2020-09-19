@@ -56,7 +56,7 @@ if (isset($_SESSION['user'])) {
               <li class="active"><a href="show.php">Nouveau contact</a></li> <br>
               <li class="active"><a href="project.php">ajouter les projets</a></li> <br>
               <li class="active"><a href="show-project.php">voir les projets</a></li><br> 
-              <li class="active"><a href="#">Déja lue</a></li> <br>
+               <br>
              </ul><br>  
          </div>
        
@@ -64,7 +64,7 @@ if (isset($_SESSION['user'])) {
  
         <!-- /.row -->
 <div class="col-sm-9">
-<a href="login/logout.php" class="btn btn-danger">Logout</a>
+<a href="login/logout.php" class="btn btn-primary btn-l">Logout</a>
        <!-- Page Heading -->
  <div class="row">
     <div class="col-lg-12">
