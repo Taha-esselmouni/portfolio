@@ -24,13 +24,13 @@ if (isset($_SESSION['user'])) {
         
         /* Set gray background color and 100% height */
         .sidenav {
-          background-color: #f1f1f1;
+         background-color : #99CCFF;
           height: 100%;
         }
         
         /* Set black background color, white text and some padding */
         footer {
-          background-color: #555;
+          background-color: #99CCFF;
           color: white;
           padding: 15px;
         }
@@ -61,6 +61,13 @@ if (isset($_SESSION['user'])) {
     // Get first image name
     $image = $_FILES['image']['name'];
     $image_uploaded_temp = $_FILES['image']['tmp_name'];
+
+          // Allow certain file formats
+      // if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
+      // && $imageFileType != "gif" ) {
+      //   echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
+      //   $uploadOk = 0;
+      // }
     // Get url
     $lien = $_POST['lien'];
   	// Get title
@@ -69,9 +76,9 @@ if (isset($_SESSION['user'])) {
   	$description = $_POST['description'];
 
   	// image file directory
-  	$target_file = "../images";
+  	$target_file = "../images/$image";
 
-  	$sql = "INSERT INTO projet (image,lien,titre,description) VALUES ('$image', '$lien', '$titre', 'description')";
+  	$sql = "INSERT INTO projet (image, lien, titre, description) VALUES ('$image', '$lien', '$titre', '$description')";
   	// execute query
   	mysqli_query($conn, $sql);
 
@@ -92,17 +99,17 @@ if (isset($_SESSION['user'])) {
     <div class="container-fluid">
       <div class="row content">
          <div class="col-sm-2 sidenav">
-            <h4><a  href="index.php"> TH</a></h4><br>
+            <a href="index.php"><img src="./images/logo.png" alt="logo taha " style ="margin-top :7%"></a><br>
              <ul class="nav nav-pills nav-stacked"><br>
-              <li class="active"><a href="show.php">Nouveau contact</a></li> <br>
+              <li class="active"><a href="show.php"style="margin-top: 34%;">Nouveau contact</a></li> <br>
               <li class="active"><a href="project.php">ajouter les projets</a></li> <br>
               <li class="active"><a href="show-project.php">voir les projets</a></li><br> 
-              <li class="active"><a href="#">Déja lue</a></li> <br>
+              
              </ul><br>  
          </div>
          
           <div class="col-sm-9">
-          <a href="login/logout.php" class="btn btn-primary btn-l">Logout</a>
+        <br>  <a href="login/logout.php" class="btn btn-primary btn-l" style="margin-left: 95%;">Logout</a>
             <div class="container-fluid">
 
                 <!-- Page Heading -->
@@ -121,7 +128,7 @@ if (isset($_SESSION['user'])) {
                     
                     <div class="form-group">
                         <label for="pro_file">Ajouter Une image</label>
-                        <input type="file"  name="images">
+                        <input type="file"  name="image">
                     </div>
 
                     <div class="form-group">

@@ -1,5 +1,16 @@
 <?php 
-include "admin\conn.php";
+
+
+$host="localhost";
+$user="root";
+$pw="taha";
+$ndb="portfolio-20";
+$conn=mysqli_connect($host,$user,$pw,$ndb,3306);
+ if($conn){
+  //echo"connected";
+ }else{
+  echo"no connected";}
+
  
  if(isset($_POST['submit'])){
      $name=($_POST['name']);
@@ -17,7 +28,7 @@ if ($conn->query($sql) === TRUE) {
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
-header("location:index.php");
+// header("location:index.php");
  }
 
 $conn->close();

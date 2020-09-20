@@ -13,7 +13,7 @@ if (!$req) {
 // on va scanner tous les tuples un par un
 while ($row = mysqli_fetch_array($req)) {
   $image = $row['image'];
-  $lien = $row['lein'];
+  $lien = $row['lien'];
   $titre = $row['titre'];
   $description = $row['description'];
   
@@ -21,20 +21,14 @@ while ($row = mysqli_fetch_array($req)) {
   
 
  echo"<div class='wow flipInX'>
-								    <a href='$lien' class='' target='_blank'>
-										<img src='$image' class='' alt=''>
-										<span>$titre</span>
-									</a>
+								 <div class= 'col-sm'>   <a href='$lien' class='' target='_blank'>
+										<img src='images/$image' class=' col-lg-4 masonry-column' alt=''>
+										
+									</a> </div>
 							    </div>";
 }
   
-  //  </div>
-  // </div>";
- 
-
-
-//mysql_free_result ($req);
-//mysql_close ();
+  
 ?>
 
 

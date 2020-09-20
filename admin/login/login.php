@@ -13,13 +13,13 @@ include "lg.php" ;
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="login.css">
 
-    <title>Login!</title>
+    <title>Login</title>
   </head>
   <body>
 <div class=" row justify-content-center">
     <form class="form form-countainer" action="login.php" method="POST">
   <div class="form-group">
-    <label for="exampleInputEmail1" class="color">Email address</label>
+    <label for="exampleInputEmail1" class="color">User</label>
     <input type="text" class="form-control" name="user" id="exampleInputEmail1" aria-describedby="emailHelp">
   </div>
   <div class="form-group">
@@ -27,7 +27,7 @@ include "lg.php" ;
     <input type="password" class="form-control" name="password" id="exampleInputPassword1">
   </div>
   
-  <button type="submit" name="submit" class="btn btn-warning">Submit</button>
+  <button type="submit" name="submit" class="btn btn-primary">Submit</button>
 </form>
 </div>
     <!-- Optional JavaScript -->

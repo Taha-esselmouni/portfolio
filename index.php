@@ -82,9 +82,9 @@
 												</a>
 											</li>
 											<li>
-												<a href="lang/lang.php" class= "lang">
+												<!-- <a href="lang/lang.php" class= "lang">
 													en
-												</a>										
+												</a>										 -->
 											</li>
 										</ul>
 										 </li>
@@ -144,9 +144,9 @@
 												</a>
 											</li>
 											<li>
-												<a href="lang/lang.php" class= "lang">
+												<!-- <a href="lang/lang.php" class= "lang">
 													en
-												</a>										
+												</a>										 -->
 											</li>
 											<li>
 											<i class="fas fa-globe"></i>
@@ -339,7 +339,13 @@
 						
 						
 					</div>
+					
 				</div>
+				<div class="col-lg-6 col-md-11 col-sm-11 col-xs-11">
+							<div class="my-skills-bg">
+								<img src="images/skils.png" alt="" style="margin-top: 30%">
+							</div>
+						</div>
 			</section>
 						<!------------------------------ start section Projet -------------------------------------------->
 
@@ -348,69 +354,27 @@
 					<div class="porfolio-head">
 						<h2>PORTFOLIO</h2>
 						<h6>Parmi mes projets</h6>
-					</div>
- 							<div class="portfolio-area container">
-											<div class="row masonry-grid">
-										<div class="col-md-6 col-sm-12 col-lg-4 masonry-column">
-							  			  <div class="wow flipInX">
-											</div>
+				</div>
+ 					</div>		
+					 			<div class="portfolio-area container">
+										<div class="row masonry-grid">	
+										<div class="col-md-6 col-sm-12 col-lg-4 masonry-column" >
+							  			  <div class="col-md-6 col-sm-8 col-lg-4 masonry-column" >
+										</div>
+										</div>
 										</div>
 								<div>
-        							
+        							<div class="wow flipInX">
             							<?php include "proje4t.php" ;  ?>
        					 			</div>
-     		 					</div>
+							
+					
     
-							    </div>
+				 </div>
 				
     
 
-					<!-- <div class="portfolio-area container">
-						<div class="row masonry-grid">
-							<div class="col-md-6 col-sm-12 col-lg-4 masonry-column">
-							    <div class="wow flipInX">
-		
-    
-							    </div>
-							    <div class="wow flipInX">
-							    	<a href="http://www.Youcode.ma/" class="" target="_blank">
-										<img src="images/youcode.png" class="" alt="">
-										<span>Youcode</span>
-									</a>
-							    </div>
-							</div>
-
-						  	<div class="col-md-6 col-sm-12 col-lg-4 masonry-column">
-							    <div class="wow flipInX">
-							    	<a href="https://github.com/Apter-X/Ecoteam/tree/master/03.%20Refonte%20d%E2%80%99un%20design" target="_blank">
-										<img src="images/mock-up_high_fidelity_web_agency.png" class="" alt="">
-										<span>mock-up_high_fidelity_web_agency</span>
-									</a>
-							    </div>
-							 
-						  	</div>
-
-						 	   
-
-						  	<div class="col-md-6 col-sm-12 col-lg-4 masonry-column">
-						    	<div class="wow flipInX ">
-							     	<a href="https://github.com/Taha-esselmouni/-Developpement-Webagency-" class="" target="_blank">
-										<img src="images/Developpement-Webagency.png" class="edelec" alt="">
-										<span>Developpement-Webagency</span>
-							    </div>
-							</div>
-
-                <div class="col-md-6 col-sm-12 col-lg-8 masonry-column" style="margin-left: 34%;">
-								<div class="wow flipInX ">
-								
-							     	<a href="https://github.com/Taha-esselmouni" target="_blank">
-										<img src="images/HTML-CSS3 Training.png" class="width-imgv" alt="">
-										<span>HTML-CSS3 Training</span>
-									</a>
-							    </div>
-							</div>
-						 -->
-
+					
 						
 			
 			</section>
@@ -495,50 +459,72 @@
 			                 </div>
 			                
 			             </div>
+
+
 						<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 bg-blanc">
 							<div class="contact-form">
 								<h3>Contact</h3>
 									<!-- Contact -->
-								<form class="form-group bv-form has-feedback" method="POST" action="mail.php" id="contactForm" novalidate="novalidate"><button type="submit" class="bv-hidden-submit" style="display: none; width: 0px; height: 0px;"></button>
+									<?php include "mail.php" ;  ?>
 
-				                   <div class="">
-				                        <div class="text-center form-contact">
-				                            <div class="form-group has-feedback">
-				                                <input type="text" name="contactName" class="form-control contact-control contact-center" id="contact-name" placeholder="Nom *" data-bv-field="name"><i class="form-control-feedback bv-no-label" data-bv-icon-for="name" style="display: none;"></i>
-				                            <small class="help-block" data-bv-validator="notEmpty" data-bv-for="name" data-bv-result="NOT_VALIDATED" style="display: none;">Le champs Nom est obligatoire!</small></div>
+									<form id="contact-form" name="contact-form" action="" method="POST">
 
-				                            <div class="form-group has-feedback">
-				                                 <input type="email" name="contactEmail" class="form-control contact-control contact-center" id="email" placeholder="E-mail *" data-bv-field="email"><i class="form-control-feedback bv-no-label" data-bv-icon-for="email" style="display: none;"></i>
-				                            <small class="help-block" data-bv-validator="notEmpty" data-bv-for="email" data-bv-result="NOT_VALIDATED" style="display: none;">Le champs Email est obligatoire!</small><small class="help-block" data-bv-validator="emailAddress" data-bv-for="email" data-bv-result="NOT_VALIDATED" style="display: none;">Entrer une adresse E-mail valide!</small></div>   
+              <!--Grid row-->
+              <div class="row">
 
-				                            <div class="form-group has-feedback">
+                  <!--Grid column-->
+                  <div class="col-md-6">
+                      <div class="md-form mb-0">
+                          <input type="text" id="name" name="name" class="form-control" placeholder="Your name">
+                          <label for="name" class=""></label>
+                      </div>
+                  </div>
+                  <!--Grid column-->
 
-				                                <input name="contactSubject" rows="7" class="form-control contact-control contact-center" id="subject" placeholder="Objet *" data-bv-field="objet"><i class="form-control-feedback bv-no-label" data-bv-icon-for="objet" style="display: none;"></i>
+                  <!--Grid column-->
+                  <div class="col-md-6">
+                      <div class="md-form mb-0">
+                          <input type="text" id="email" name="email" class="form-control" placeholder="Your email">
+                          <label for="email" class=""></label>
+                      </div>
+                  </div>
+                  <!--Grid column-->
 
-				                            <small class="help-block" data-bv-validator="notEmpty" data-bv-for="objet" data-bv-result="NOT_VALIDATED" style="display: none;">Le champs Objet est obligatoire!</small></div>
+              </div>
+              <!--Grid row-->
 
-				                            <div class="form-group has-feedback">
-				                                <textarea name="contactMessage" rows="7" class="form-control contact-control contact-textarea" id="message" placeholder="Message *" data-bv-field="message"></textarea><i class="form-control-feedback bv-no-label" data-bv-icon-for="message" style="display: none;"></i>
-				                            <small class="help-block" data-bv-validator="notEmpty" data-bv-for="message" data-bv-result="NOT_VALIDATED" style="display: none;">Le champs Message est obligatoire!</small></div>
+              <!--Grid row-->
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="md-form mb-0">
+                          <input type="text" id="subject" name="subject" class="form-control" placeholder="Subject">
+                          <label for="subject" class=""></label>
+                      </div>
+                  </div>
+              </div>
+              <!--Grid row-->
 
-				                             <div class="form-group">
+              <!--Grid row-->
+              <div class="row">
 
-				                                <button type="submit" class="btn btn-default contact-btn lang" key="send" id="btn-send" >Envoyer</button>
+                  <!--Grid column-->
+                  <div class="col-md-12">
 
-				                            </div>
+                      <div class="md-form">
+                          <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea" placeholder="Your message"></textarea>
+                          <label for="message"></label>
+                      </div>
 
-				                       </div>
+                  </div>
+              </div>
+              <!--Grid row-->
 
+              <div class="text-center text-md-left">
+              <button class="btn btn-primary" type="submit" name="submit" >Send</button>
+              </div>
+          
 
-				                        <div class="col-md-6 col-sm-12">
-
-
-
-				                       </div>
-
-				                    </div>
-
-				                 </form>
+          </form>
 
 				                     							</div>
 						</div>
