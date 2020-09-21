@@ -54,7 +54,7 @@ if (isset($_SESSION['user'])) {
   
   
   // Initialize message variable
-  $msg = "";
+  // $msg = "";
 
   // If upload button is clicked ...
   if (isset($_POST['upload'])) {
@@ -62,12 +62,7 @@ if (isset($_SESSION['user'])) {
     $image = $_FILES['image']['name'];
     $image_uploaded_temp = $_FILES['image']['tmp_name'];
 
-          // Allow certain file formats
-      // if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
-      // && $imageFileType != "gif" ) {
-      //   echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
-      //   $uploadOk = 0;
-      // }
+          
     // Get url
     $lien = $_POST['lien'];
   	// Get title
